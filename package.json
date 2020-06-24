@@ -1,5 +1,5 @@
 {
-  "name": "recharts",
+  "name": "@lokavant/recharts",
   "version": "1.0.0-alpha.1",
   "description": "React charts",
   "main": "lib/index",
