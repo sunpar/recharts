@@ -2,7 +2,8 @@ name: Publish to NPM
 
 on:
   release:
-    branches: [master]
+    branches:
+      - master
 
 jobs:
   # This workflow contains a single job called "publish"
