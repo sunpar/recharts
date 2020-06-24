@@ -2,7 +2,7 @@ name: Publish to NPM
 
 on:
   release:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
   # This workflow contains a single job called "publish"
@@ -10,19 +10,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v2-beta
-      with:
-        node-version: '12.x'
-        registry-url: 'https://registry.npmjs.org'
-      env:
-        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-         
-    - name: build script
-      run: |
-        npm install
-        node scripts/build.js
-      
-    - name: publish
-      run: npm publish --access public
-      
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2-beta
+        with:
+          node-version: '12.x'
+          registry-url: 'https://registry.npmjs.org'
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: build project
+        run: |
+          npm install
+          node scripts/build.js
+
+      - name: Test and Lint
+        run: |
+          export DISPLAY=:99
+          ./node_modules/karma/bin/karma start test/karma.conf.js --browsers ChromeHeadless --single-run --no-auto-watch --capture-timeout 60000
+          npm run lint
+
+      - name: publish
+        run: npm publish --access public
