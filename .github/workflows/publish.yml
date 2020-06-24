@@ -16,7 +16,7 @@ jobs:
         node-version: '12'
 
     - name: build script
-      run: bash scripts/build.js
+      run: node scripts/build.js
       
     - id: publish
       uses: JS-DevTools/npm-publish@v1
