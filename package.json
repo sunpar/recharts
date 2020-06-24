@@ -1,6 +1,6 @@
 {
-  "name": "recharts",
-  "version": "2.0.0-beta.6",
+  "name": "@lokavant/recharts",
+  "version": "1.0.0",
   "description": "React charts",
   "main": "lib/index",
   "module": "es6/index",
@@ -44,13 +44,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/recharts/recharts.git"
+    "url": "https://github.com/sunpar/recharts.git"
   },
   "author": "recharts group",
   "bugs": {
-    "url": "https://github.com/recharts/recharts/issues"
+    "url": "https://github.com/sunpar/recharts/issues"
   },
-  "homepage": "https://github.com/recharts/recharts",
+  "homepage": "https://github.com/sunpar/recharts",
   "peerDependencies": {
     "react": "^16.0.0",
     "react-dom": "^16.0.0"
