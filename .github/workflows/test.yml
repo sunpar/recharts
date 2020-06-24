@@ -22,9 +22,14 @@ jobs:
     - uses: actions/setup-node@v2-beta
       with:
         node-version: '12'
-
-    # Runs a set of commands using the runners shell
+    
+    - name: build project
+      run: |
+        npm install
+        npm run build
+        
     - name: Test and Lint
       run: |
-        ./node_modules/karma/bin/karma start test/karma.conf.js --browsers Firefox --single-run --no-auto-watch --capture-timeout 60000,
-        npm run lint
+          npm run test
+          npm run lint
+
