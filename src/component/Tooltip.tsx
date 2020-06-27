@@ -73,6 +73,7 @@ type Props<TValue extends ValueType, TName extends NameType> = DefaultProps<TVal
     | {
         strokeDasharray: ReactText;
         stroke?: string;
+        fill?: string;
       };
   coordinate?: {
     x?: number;

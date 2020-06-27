@@ -7,6 +7,12 @@ import { BaseAxisProps, AxisInterval } from '../util/types';
 export interface Props extends BaseAxisProps {
   /** The unique id of x-axis */
   xAxisId?: string | number;
+  // The label input
+  label?: {
+    value: string;
+    offset: number;
+    position: string;
+  };
   /** The width of axis which is usually calculated internally */
   width?: number;
   /** The height of axis, which need to be setted by user */
