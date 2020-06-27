@@ -19,7 +19,7 @@ export interface Payload<TValue, TID> {
   id: TID;
   type: LegendType;
   color: string;
-  payload: {
+  payload?: {
     strokeDasharray: ReactText;
   };
   formatter?: Formatter<TValue, TID>;

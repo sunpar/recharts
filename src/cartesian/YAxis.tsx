@@ -6,6 +6,12 @@ import { BaseAxisProps, AxisInterval } from '../util/types';
 export interface Props extends BaseAxisProps {
   /** The unique id of y-axis */
   yAxisId?: string | number;
+  // The label input
+  label?: {
+    value: string;
+    offset: number;
+    position: string;
+  };
   /**
    * Ticks can be any type when the axis is the type of category
    * Ticks must be numbers when the axis is the type of number

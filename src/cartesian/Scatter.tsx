@@ -66,7 +66,7 @@ interface ScatterProps {
   lineJointType?: CurveType;
   legendType?: LegendType;
   tooltipType?: TooltipType;
-  className: string;
+  className?: string;
   name?: string | number;
 
   activeIndex?: number;
