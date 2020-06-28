@@ -14,7 +14,7 @@ interface CartesianViewBox {
   height?: number;
 }
 
-interface PolarViewBox {
+export interface PolarViewBox {
   cx?: number;
   cy?: number;
   innerRadius?: number;

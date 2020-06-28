@@ -30,7 +30,6 @@
 - add payload to formatter and labelFormatter in Tooltip
 - allow domain of axis to change the order of categories
 
-
 ## 2.0.0-beta.4 (Mar 17, 2020)
 
 ### fix
@@ -46,7 +45,6 @@
 ### chore
 
 - add types
-
 
 ## 2.0.0-beta.3 (Mar 13, 2020)
 
@@ -69,7 +67,7 @@
 - Fixes arc angles when `cornerIsExternal` is used
 - Invert cartesian label position based on negative values
 - Fix usage of hooks in Tooltip, Label, Legend and Customized
-- Move draging-end listener to the window for brush 
+- Move draging-end listener to the window for brush
 - Fix trigger after mouse leave
 - Added the angle as key which need to be used in the Label align
 - Rewrite index.js to index.ts, update scripts in package.json
@@ -84,7 +82,7 @@
 ### fix
 
 - fix error parameters in `appendOffsetOfLegend`
-- fix style of <Area /> 
+- fix style of <Area />
 
 ## 2.0.0-beta.0 (Dec 03, 2019)
 
@@ -124,7 +122,6 @@
 
 - Fixed Text Component crash
 - Fixed eslint errors in src/
-
 
 ### feat
 
@@ -170,7 +167,6 @@
 - fix the order of tooltip items when not specify itemSorter
 - Fix typo in example of RadialBarChart
 
-
 ## 1.6.1 (May 20, 2019)
 
 ### fix
@@ -202,7 +198,7 @@
 
 ### feat
 
-- allow aria-* attributes and "role", "focusable", "tabIndex" of charts, fix #1226, fix #1584
+- allow aria-\* attributes and "role", "focusable", "tabIndex" of charts, fix #1226, fix #1584
 - add new props "paylodUniqBy" to Tooltip and Legend
 
 ## 1.4.4(Feb 15, 2019)
@@ -231,7 +227,6 @@
 - Update lodash version to 4.17.5 and install webpack-dev-server@3.1.14 dev dependency
 - Updated package.json to mark effectful modules
 - chore: update version of sinon, from 4.x to 7.x
-
 
 ## 1.4.2(Dec 21, 2018)
 
@@ -272,7 +267,7 @@
 
 ### fix
 
-- use lodash _.values instead of Object.values
+- use lodash \_.values instead of Object.values
 - perfer YAxis which has finite domain and nice ticks when a chart has many YAxes
 - fix <Area /> for expected length height attribute
 
@@ -337,7 +332,7 @@
 - Allow reference areas which extend past the canvas bounds
 - Allow to add more classes in tooltips
 - Reference line segment by specifying a pair of
- endpoints
+  endpoints
 
 ## 1.0.1(Jul 05, 2018)
 
@@ -354,7 +349,7 @@
 - Clip dots of <Line />
 - Move style spread to after default styles to allow overriding
 - Fixing range area chart bottom bound. Base line needed to be filterted for connecting
- null
+  null
 - Fix tooltips that disappear while mouse still over a scatter point
 
 ### refactor
@@ -365,7 +360,7 @@
 ### feat
 
 - Add touchStart & touchEnd event handling
-- Add explicit prop `defaultShowTooltip`  to activate tooltip
+- Add explicit prop `defaultShowTooltip` to activate tooltip
 - Position the 'top' label outside the element for negative heights
 
 ## 1.0.0-beta.10(Jan 31, 2018)
@@ -378,7 +373,7 @@
 
 ### refactor
 
-- Replace flatmap of reduce to _.flatmap in getDomainOfDataByKey
+- Replace flatmap of reduce to \_.flatmap in getDomainOfDataByKey
 
 ### feat
 
@@ -396,11 +391,11 @@
 
 - Add props `useTranslate3d` to control whether use translate3d or translate in <Tooltip />
 - Add props `verticalFill` and `horizontalFill` in `<CartesianGrid />` to show grid background
-- Add  `visibleTicksCount` in props of customized tick of `<CartesianAxis />`
+- Add `visibleTicksCount` in props of customized tick of `<CartesianAxis />`
 
 ### fix
 
-- Replace lodash _.get with simple Array.prototype.find
+- Replace lodash \_.get with simple Array.prototype.find
 - Prevent texts from being selected when dragging the brush
 - Add try...catch... when getTotalLength is called by a svg path to fix IE bug
 
@@ -445,7 +440,7 @@
 
 - fix Label when content is a function and return simple string
 - add name to propTypes of Scatter
-- fix ** error of lib/
+- fix \*\* error of lib/
 
 ## 1.0.0-beta.3(Nov 23, 2017)
 
@@ -463,7 +458,7 @@
 - Fix position of `<Label />`
 - Fix exception of AreaChart when all the values are null
 - Fix the orders of polar angle ticks in RadarChart
-- Replace ** width Math.pow
+- Replace \*\* width Math.pow
 
 ## 1.0.0-beta.2(Nov 17, 2017)
 
@@ -510,7 +505,7 @@
 
 - Add props `reverseStackOrder` to reverse the order of stacked items
 - Allow an arbirary domain for cartesian X and Y axes
-- Added className prop for Label
+- Added prop for Label
 
 ### fix
 
@@ -520,7 +515,6 @@
 ### docs
 
 - Fix typo initilaState -> initialState
-
 
 ## 1.0.0-alpha.5(Sep 16, 2017)
 
@@ -539,7 +533,6 @@
   By allowing type: String on 'minHeight', 'minWidth', 'maxHeight' property, developers can use length in different units like em, pt etc.
 - Render curve with fill first in Area
 
-
 ### dep
 
 - remove react-transition-group in peer dependencies
@@ -552,6 +545,7 @@
 - Fix error 'Cannot read property 'map' of undefined' in Pie
 - Fix bug of parsing the width of Brush
 - Don't render any path when width === 0 || height === 0 in Rectangle
+
 ### refactor
 
 - Avoid calculating ticks if tick is set to false
@@ -639,7 +633,6 @@
 - fix spelling error of fillOpacity
 - fix bug of axis when has duplicated ticks
 
-
 ## 0.22.1 (Apr 13, 2017)
 
 ### feat
@@ -656,7 +649,7 @@
 
 ### feat
 
-- Add event handlers to component  Dot
+- Add event handlers to component Dot
 - Support embedded chart as a panoram in Brush
 - Add props reversed to `XAxis` and `YAxis` to reverse the range of axis
 
@@ -729,6 +722,7 @@
 ## 0.20.4 (Jan 17, 2017)
 
 ### fix
+
 - Animate of Tooltip may crash browser sometimes, use style transition to do the animation of tooltip
 
 ## 0.20.3 (Jan 17, 2017)
@@ -768,9 +762,8 @@
 
 ### fix
 
-- Fix bug of `isChildrenEqual`  when component has child `null`
+- Fix bug of `isChildrenEqual` when component has child `null`
 - Adjust `barGap` when `bandSize` is too small to display bars
-
 
 ### feat
 
@@ -806,7 +799,7 @@
 
 ### fix
 
--  Adding missing event propTypes
+- Adding missing event propTypes
 - support x, y of `Text` are number or text
 - fix proptypes of Scatter to allow that the props `data` can be a array of array
 - fix server side render check `isSsr`
@@ -921,6 +914,7 @@
 - Add angle property to PRESENTATION_ATTRIBUTES (#307)
 
 ### Dev
+
 - chore: update istanbul plugin and add yarn.lock
 
 ## 0.15.2 (Oct 13, 2016)
@@ -1081,7 +1075,7 @@
 
 ### feat
 
-- Support Tooltip  of RadarChart
+- Support Tooltip of RadarChart
 
 ### fix
 
@@ -1262,7 +1256,7 @@
 
 ### refactor
 
-- Refactor *ticks* specified in `XAxis`, `YAxis`
+- Refactor _ticks_ specified in `XAxis`, `YAxis`
 - Use area of `Symbol` to show the size of number in ScatterChart
 - Refactor the `activeShape` in `Scatter`
 
@@ -1372,6 +1366,7 @@
 ## 0.8.3 (February 25, 2016)
 
 ### refactor
+
 - refactor CartesianChart to a high order component, move some function to /util/CartesianUtils which can be used in ScatterChart.
 - Simplify ComposedChart, remove duplicated code
 - use `filterEventAttributes` to add events props
@@ -1380,31 +1375,36 @@
 ## 0.8.2 (February 24, 2016)
 
 ### fix
+
 - rollback last fix of Line animation from value
 
 ## 0.8.1 (February 24, 2016)
 
 ### fix
+
 - fix the bug of Line animation from value
 
 ## 0.8.0 (February 22, 2016)
 
 ### feat
+
 - implement ReferenceDot in cartesian charts
 - support alwaysShow of ReferenceLine and ReferenceDot
 
 ### refactor
+
 - refactor domain of CartesianAxis and PolarRadiusAxis
 - refactor this props name in ReferenceLine
 
 ### fix
+
 - fix the bug of calculate extent in RadarChart
 - fix some bugs of server side rendering when document is called
-
 
 ## 0.7.0 (February 17, 2016)
 
 ### UI
+
 - feat: support dasharray line animation
 - refactor(CartesianAxis, PolarAngleAxis, PolarRadiusAxis):rename label to tick
 - feat(label): add label of CartesianAxis, PolarRadiusAxis, ReferenceLine
@@ -1415,6 +1415,7 @@
 ## 0.6.3 (February 10, 2016)
 
 ### UI
+
 - refactor(Legend): refactor the location of legend
 - fix(CartesianChart,CartesianAxis): 1. fix the bug of dataStartIndex && dataEndIndex when the length of data was changed 2. fix the default value of tickFormatter
 - fix(cartesian/Line.js): fix Line animation bug
@@ -1422,16 +1423,19 @@
 ## 0.6.2 (February 9, 2016)
 
 ### UI
+
 - feat: use lodash `isEqual` write new pureRender
 
 ## 0.6.1 (February 5, 2016)
 
 ### UI
+
 - fix(Pie, RadialBarChart): fix the default value of cx, cy, innerRadius, outerRadius
 
 ## 0.6.0 (February 5, 2016)
 
 ### UI
+
 - refactor: rename AdaptionWrapper to ResponsiveContainer
 - refactor: delete some repeated codes, and use polarToCartesian in PolarUtils
 - fix: update the defaultProps of cx, cy, innerRadius, outerRadius
@@ -1441,35 +1445,42 @@
 ## 0.5.2 (February 4, 2016)
 
 ### UI
+
 - fix(RadarChart): fix the bug of unreasonable default value for radius in PolarAngleAxis
 
 ### Docs
+
 - chore: change main and jsnext:main in package.json
 
 ## 0.5.1 (February 4, 2016)
 
 ### UI
+
 - feat: support percentage string in the props(cx, cy, innerRadius, outerRadius) of RadarChart, PieChart, RadialChart
 - fix(PolarRadiusAxis): add props domain
 - refactor(CartesianAxis): remove unneeded props domain
 
 ### Docs
+
 - chore: optimize npm script commands
 - chore: update pkg
 
 ## 0.5.0 (February 3, 2016)
 
 ### UI
+
 - feat(AdaptionWrapper): add AdaptionWrapper to make charts adapt to the size of parent dom
 - refactor: directory structure adjustment
 - fix(LineChart, CartesianChart): 1.fix the bug of margin when only part of the attributes are specified 2.fix the bug of number axis when domain is specified 3.fix the bug of category number when no dataKey is specified 4.format the code in README.md
 - refactor(treemap): support tree structure data; changed props that pass to shape
 
 ### Test
+
 - test: 1.rename some test files 2.add test case of LodashUtil
 - test(treemap): modified treemap test
 
 ### Docs
+
 - deps: add dependence oui-dom-utils
 - chore(README.md): add syntax highlighting to the readme
 - chore(package.json): add keyword react-component
@@ -1477,15 +1488,19 @@
 ## 0.4.9 (February 2, 2016)
 
 ### UI
+
 - refactor(CartesianAxis, PolarAngleAxis): change props name "orient" to "orientation"
 - refactor(Line, Bar, Pie): refactor animation using new react-smooth
 - refactor(Pie, RidalBar): remove the props clockWise, and add the props endAngle
+
 ### Test
+
 - test(Line, Bar, Radar, Scatter): add test case
 
 ## 0.4.7 (February 1, 2016)
 
 ### UI
+
 - refactor(RadarChart, Radar, PolarAngleAxis, PolarRadiusAxis): refactor the components of Radar
 - refactor(classNames): refactor the method of package a className
 - refactor(Pie): add nameKey in Pie
@@ -1493,15 +1508,18 @@
 ## 0.4.6 (January 29, 2016)
 
 ### UI
+
 - refactor(Legend): refactor the legend in all the charts, change the location method of legend
 - feat(radar): add new RadarChart with the new component used in Chart, like PolarAngleAxis PolarRadiusAxis PolarGrid Polygon ex
 
 ### Test
+
 - feat(test): add test for charts, chartWrappers, components, and shapes
 
 ## 0.4.5 (January 29, 2016)
 
 ### UI
+
 - fix(Curve): fix the bug of curve defined function
 - fix(ComposedChart): fix the bug of bar position when a line and a bar display a same group of data.
 - chore(webpack.config.js): add react, react-dom, react-dom-server to external
@@ -1510,22 +1528,26 @@
 ## 0.4.4 (January 28, 2016)
 
 ### Dev
+
 - chore(webpack.config.js): add build command
 
 ## 0.4.3 (January 28, 2016)
 
 ### UI
+
 - deps(recharts-scale, react-smooth): update version of recharts-scale and react-smooth
 - refactor(Bar, RadialBar, TreemapChart, Tooltip): rename the props customContent
 
 ## 0.4.2 (January 28, 2016)
 
 ### UI
+
 - Add support of stack value in BarChart, AreaChart, ComposedChart
 
 ## 0.4.1 (January 27, 2016)
 
 ### UI
+
 - Change name of the props in Tooltip, Legend
 - Fix the bug of customized label element in CartesianAxis
 - Remove repeated, meaningless constructor functions
@@ -1533,5 +1555,5 @@
 ## 0.4.0 (January 26, 2016)
 
 ### UI
-- Refactor some components, include CartesianAxis, Legend, Tooltip etc, to unify some props name.
 
+- Refactor some components, include CartesianAxis, Legend, Tooltip etc, to unify some props name.
