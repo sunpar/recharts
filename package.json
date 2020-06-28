@@ -1,6 +1,6 @@
 {
   "name": "@lokavant/recharts",
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.0-alpha.7",
   "description": "React charts",
   "main": "lib/index",
   "module": "es6/index",

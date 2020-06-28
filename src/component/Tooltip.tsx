@@ -57,7 +57,7 @@ type Props<TValue extends ValueType, TName extends NameType> = DefaultProps<TVal
     x?: boolean;
     y?: boolean;
   };
-  content?: ContentType<TValue, TName>;
+  content?: ContentType<TValue, TName> | any;
   viewBox?: {
     x?: number;
     y?: number;
@@ -71,7 +71,7 @@ type Props<TValue extends ValueType, TName extends NameType> = DefaultProps<TVal
     | boolean
     | ReactElement
     | {
-        strokeDasharray: ReactText;
+        strokeDasharray?: ReactText;
         stroke?: string;
         fill?: string;
       };

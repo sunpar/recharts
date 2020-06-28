@@ -1,16 +1,25 @@
 /**
  * @fileOverview Y Axis
  */
-import { BaseAxisProps, AxisInterval } from '../util/types';
+import { BaseAxisProps, AxisInterval, ViewBox } from '../util/types';
+import { PositionType } from './XAxis';
+import { PolarViewBox } from '../component/Label';
 
 export interface Props extends BaseAxisProps {
   /** The unique id of y-axis */
   yAxisId?: string | number;
   // The label input
   label?: {
-    value: string;
-    offset: number;
-    position: string;
+    angle?: number;
+    viewBox?: ViewBox | PolarViewBox;
+    value?: number | string;
+    offset?: number;
+    position?: PositionType;
+    children?: React.ReactNode[] | React.ReactNode;
+    className?: string;
+    content?: (props: any) => React.ReactElement;
+    dy?: number;
+    dx?: number;
   };
   /**
    * Ticks can be any type when the axis is the type of category
